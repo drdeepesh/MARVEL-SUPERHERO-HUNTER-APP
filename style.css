@@ -1,0 +1,217 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* body-section */
+body{
+  background-image: url('superhero_hunter_backgroung.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  z-index: -1;
+  color: #ffffff;
+}
+
+/* Nav-section */
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em 1em;
+}
+
+.main-name{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.main-name h1{
+  font-size: 25px;
+  text-decoration: none;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* marvel logo */
+.main-name p{
+  font-size: 1.5em;
+  font-weight: bolder;
+  padding: 0.1em;
+  color: #fff;
+  background-color: #e51b1b;
+  transition: color 0.5s ease;
+}
+
+.main-name p:hover{
+  color: #000000;
+}
+
+.nav-btns p{
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.nav-btns{
+  display: flex;
+  gap: 2em;
+}
+
+#back:hover{
+  text-decoration: underline;
+}
+
+/* homepage container section */
+.container{
+  background-color: #171821;
+  opacity: 0.85;
+  width: 100%;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  right: 50%;
+  top: 5em;
+  padding: 2em 2em;
+  border-radius: 1em;
+}
+
+/* search box on homepage */
+.input{
+  width: 100%;
+  border: none;
+  margin-right: 0.5em;
+  border-radius: 1em;
+  padding: 7px 7px;
+}
+
+/* cards cointainer on home page */
+.homepage-characters{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* cards of hero characters */
+.card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #aaa;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 5px #aaa ;
+}
+
+.card_img img {
+  width: 100%;
+  height: 100%;
+}
+
+.card_info{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_info_btns{
+  display: flex;
+  align-items: center;
+  gap: 10rem;
+  margin: 0.5rem 0 0.2rem 0;
+}
+
+.information{
+  padding: 0.2rem;
+  background-color: #e51b1b;
+  color: #ffffff;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+}
+
+.favorite_btn:hover{
+  color: #ff0000;
+  cursor: pointer;
+}
+.favorite {
+  color: #ff0000;
+}
+
+
+/* Second container (for details of heros) */
+
+.display-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between; 
+  
+  background: #0d1926;
+  color: #aaa;
+  margin: 3em auto;
+  padding: 2em;
+}
+
+.info_img_container {
+  max-width: 250px;
+}
+
+.info_img_container img {
+  width: 100%;
+}
+
+.info h2 {
+  font-size: 2rem;
+  margin: 1.2em 0;
+}
+
+.display-container ul {
+  list-style-type: none;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  margin: 1.2em 0;
+}
+.comic_section h2,
+.series_section h2 {
+  text-decoration: underline;
+  color: #0e4177;
+}
+
+
+/* for responsiveness */
+
+@media screen and (max-width: 600px) {
+
+  nav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-name #home{
+    font-size: 1em;
+  }
+  .main-name p{
+    font-size: 0.8em;
+  }
+
+  .nav-btns{
+    margin-left: 0.5em;
+  }
+
+  .second-container .display-container {
+      width: 95%;
+      display: flex;
+      justify-content: center;
+  }
+}

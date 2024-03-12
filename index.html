@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SUPERHERO HUNTER</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="main-name">
+            <h1 id="home">SUPERHERO HUNTER</h1>
+            <p>MARVEL</p>
+        </div>
+        <div class="nav-btns">
+            <p id="back" style="display: none;">Back <i class="fa-regular fa-circle-left"></i></p>
+            <p id="show-favorite">Favorites</p>
+        </div>
+    </nav>
+    <div class="container">
+        <form>
+            <input type="text" id="search" placeholder="Search Superhero Here" class="input" value=""/>
+        </form>
+        <div class="homepage-characters"></div>
+    </div>
+
+    <div class="second-container">
+        <div class="display-container"></div>
+    </div>
+    
+
+    <script type='module' src="./hero.js" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js" integrity="sha512-E8QSvWZ0eCLGk4km3hxSsNmGWbLtSCSUcewDQPQWZF6pEU8GlT8a5fF32wOl1i8ftdMhssTrF/OhyGWwonTcXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script type='module' src="./script.js" defer></script>
+</body>
+</html>
